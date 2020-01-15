@@ -1,0 +1,22 @@
+<div class="body">
+        <div class="products-page">
+                <p-dataView [value]="groups" filterBy="name">
+                        <p-header>
+                            {{title}}
+                        </p-header>
+                        <ng-template let-group pTemplate="listItem">
+                            <div class="group_card">
+                                <div (click)="onClick(group)"><img class="groupImage" src="{{group.hero.href}}"></div>
+                                    <div class="group_info">
+                                            <p class="groupName">{{group.name}}</p>
+                                            <div class="groupPrice">${{group.priceRange.regular.high}}</div>        
+                                    </div>
+                                </div>
+                        </ng-template>
+                    
+                </p-dataView>
+        </div>
+        <div class="details-page" (click)="closeDetailsPage($event)" *ngIf="isProductDetailVisible">
+                <app-product-detail [group]=currentGroup></app-product-detail>
+        </div>
+</div>

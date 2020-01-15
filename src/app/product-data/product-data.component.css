@@ -1,0 +1,42 @@
+.products-page {
+    position: absolute;
+    position: absolute;
+    width: 80%;
+    margin: 10%;
+}
+.details-page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+:host >>> .ui-carousel-content {
+    text-align: center !important;
+    padding: 5px;
+    position: absolute;
+    width: inherit;
+    top: 150px;
+}
+
+img {
+    height: 300px;
+    width: 400px;
+}
+:host >>> .group_card {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    border-bottom: 1px silver solid;
+}
+:host >>> .group_info {
+    align-items: center;
+    text-align: center;
+    margin: 5% 5% 10% 10%;
+}
+:host >>> .groupName {
+    font-weight: 700;
+    width: 93%;
+    text-align: center;
+}
