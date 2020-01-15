@@ -7,7 +7,7 @@ import { Group, Image } from '../store.service';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  public images : Image[];
+  public images: Image[];
   @Input() public group: Group;
 
   constructor() {
